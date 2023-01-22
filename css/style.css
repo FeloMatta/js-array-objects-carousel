@@ -61,7 +61,7 @@ main{
 }
 
 .slider .thumbnails .thumbnail{
-    height: 20%;
+    min-height: 1%;
     width: 100%;
     filter: brightness(40%);
 }
@@ -84,13 +84,18 @@ main{
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .4);
     cursor: pointer;
     font-weight: bold;
     font-size: 1.25rem;
     position: absolute;
     right: 10%;
     transform: translateX(50%);
+    transition: all .2s ease-in-out;
+}
+
+.slider .controls > span:hover{
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .slider .controls > span.prev{
